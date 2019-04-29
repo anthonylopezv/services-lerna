@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@nestjs/platform-express": "^6.1.1",
+    "@types/express": "^4.16.1",
+    "@types/mongoose": "^5.3.27",
+    "@types/node": "^11.13.8",
+    "lerna": "^3.13.4",
+    "nodemon": "^1.18.11",
+    "ts-node": "^8.1.0",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@nestjs/common": "^6.1.1",
+    "@nestjs/core": "^6.1.1",
+    "@nestjs/microservices": "^6.1.1",
+    "@types/dotenv": "^6.1.1",
+    "mongoose": "^5.5.4",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.1"
+  }
+}
