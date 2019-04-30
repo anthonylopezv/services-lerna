@@ -1,0 +1,29 @@
+{
+  "name": "auth-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "ts-node src/main",
+    "start:dev": "nodemon",
+    "prestart:prod": "npm run build",
+    "start:prod": "node dist/main.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/jwt": "^6.0.0",
+    "@nestjs/passport": "^6.0.0",
+    "@nestjs/swagger": "^3.0.2",
+    "passport": "^0.4.0",
+    "swagger-ui-express": "^4.0.2",
+    "user-service-mdl": "^1.0.22"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "ts-node": "^8.1.0"
+  }
+}
