@@ -6,7 +6,7 @@ import { MessagePattern } from '@nestjs/microservices';
 import { UsersService } from './user.service';
 
 import { CreateUserDto } from "../../models/dto/create-user.dto";
-import { User } from '../../models/interfaces/user.interface';
+import { User } from '../../models/entity/user.interface';
 
 @Controller()
 export class UsersController{

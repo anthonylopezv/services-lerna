@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
-import { User } from '../../models/interfaces/user.interface';
+import { User } from '../../models/entity/user.interface';
 import { CreateUserDto } from '../../models/dto/create-user.dto';
 
 @Injectable()
