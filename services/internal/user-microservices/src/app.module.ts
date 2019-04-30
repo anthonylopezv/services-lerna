@@ -1,11 +1,13 @@
 
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { UsersModule } from './user/user.module';
+import { UsersModule } from './modules/user/user.module';
+
+import { MLAB_URI } from "./app.constant";
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://admin:admin2019@ds147436.mlab.com:47436/db-user-service', {
+    MongooseModule.forRoot(MLAB_URI, {
       useNewUrlParser: true,
     }),
     UsersModule,
